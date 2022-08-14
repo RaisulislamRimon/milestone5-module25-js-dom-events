@@ -21,19 +21,26 @@
     </section>
 
     <script>
-      const items = document.getElementsByClassName("item");
-      // console.log(items);
-      for (const item of items) {
-        // console.log(item);
-        item.addEventListener("click", function (event) {
-          // console.log("item clicked", item);
+      // const items = document.getElementsByClassName("item");
+      // // console.log(items);
+      // for (const item of items) {
+      //   // console.log(item);
+      //   item.addEventListener("click", function (event) {
+      //     // console.log("item clicked", item);
+      //     // console.log(event.target);
+      //     /* // to find the parent node of the clicked item
+      //     console.log(event.target.parentNode); */
+      //     // to remove the clicked item from the list
+      //     event.target.parentNode.removeChild(event.target);
+      //   });
+      // }
+
+      document
+        .getElementById("list-container")
+        .addEventListener("click", function (event) {
           // console.log(event.target);
-          /* // to find the parent node of the clicked item
-          console.log(event.target.parentNode); */
-          // to remove the clicked item from the list
           event.target.parentNode.removeChild(event.target);
         });
-      }
 
       document
         .getElementById("btn-add-item")
@@ -41,6 +48,7 @@
           const listContainer = document.getElementById("list-container");
           const li = document.createElement("li");
           li.innerHTML = "New Item";
+          li.classList.add("item");
           listContainer.appendChild(li);
         });
     </script>
