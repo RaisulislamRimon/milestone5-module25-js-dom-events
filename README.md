@@ -25,4 +25,5 @@
 - 25-5 Create a comment box and display comment
 - 25-6 Simple github like delete confirmation button
 - 25-7 (semi-advanced) Event bubble and Stop propagating
-- 
+- 25-8 (advanced) Event delegate and benefit of Event bubble
+-
