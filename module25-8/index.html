@@ -17,6 +17,7 @@
         <li class="item">Corrupti, repellendus!</li>
         <li class="item">Assumenda, aut.</li>
       </ul>
+      <button id="btn-add-item">Add Item</button>
     </section>
 
     <script>
@@ -33,6 +34,15 @@
           event.target.parentNode.removeChild(event.target);
         });
       }
+
+      document
+        .getElementById("btn-add-item")
+        .addEventListener("click", function () {
+          const listContainer = document.getElementById("list-container");
+          const li = document.createElement("li");
+          li.innerHTML = "New Item";
+          listContainer.appendChild(li);
+        });
     </script>
   </body>
 </html>
