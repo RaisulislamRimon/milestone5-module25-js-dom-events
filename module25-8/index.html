@@ -27,8 +27,10 @@
         item.addEventListener("click", function (event) {
           // console.log("item clicked", item);
           // console.log(event.target);
-          // to find the parent node of the clicked item
-          console.log(event.target.parentNode);
+          /* // to find the parent node of the clicked item
+          console.log(event.target.parentNode); */
+          // to remove the clicked item from the list
+          event.target.parentNode.removeChild(event.target);
         });
       }
     </script>
