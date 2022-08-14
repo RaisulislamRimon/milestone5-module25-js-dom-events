@@ -20,4 +20,6 @@
 
 - - <button onclick="makeOrange()">Make Orange</button>
 
+- 25-3 Different ways to use addEventListener on a button
+- 25-4 Most common ways to set Event Handlers
 -
