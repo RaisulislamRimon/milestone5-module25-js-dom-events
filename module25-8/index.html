@@ -24,8 +24,11 @@
       // console.log(items);
       for (const item of items) {
         // console.log(item);
-        item.addEventListener("click", function () {
-          console.log("item clicked", item);
+        item.addEventListener("click", function (event) {
+          // console.log("item clicked", item);
+          // console.log(event.target);
+          // to find the parent node of the clicked item
+          console.log(event.target.parentNode);
         });
       }
     </script>
