@@ -8,12 +8,29 @@
   </head>
   <body>
     <h1 id="secret-info">My secret Info</h1>
-    <input type="text" placeholder="please type to delete" />
-    <button id="btn-delte">delete</button>
+    <input
+      id="delete-confirm"
+      type="text"
+      placeholder="please type to delete"
+    />
+    <button id="btn-delete" disabled>delete</button>
 
     <script>
       document
-        .getElementById("btn-delte")
+        .getElementById("delete-confirm")
+        .addEventListener("keyup", function (event) {
+          const text = event.target.value;
+          //   console.log(text);
+          const deleteBtn = document.getElementById("btn-delete");
+          if (text === "delete") {
+            /* deleteBtn.disabled = false;
+          } else {
+            deleteBtn.disabled = true; */
+            deleteBtn.removeAttribute("disabled");
+          }
+        });
+      document
+        .getElementById("btn-delete")
         .addEventListener("click", function () {
           //   console.log("delete");
           //   document.getElementById("secret-info").innerHTML = "";
