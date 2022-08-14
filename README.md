@@ -22,4 +22,5 @@
 
 - 25-3 Different ways to use addEventListener on a button
 - 25-4 Most common ways to set Event Handlers
+- 25-5 Create a comment box and display comment
 -
